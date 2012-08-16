@@ -1,16 +1,18 @@
-# I Can Haz Blog?! #
+# I Can Haz Blog 2?! #
 
-## Description ##
+## Description
 
-Icanhazblog is a blog application running on MongoDB and Rails 3.
+Icanhazblog is a blog application running on MySQL and Rails ~> 3.2.
 
-## Installation ##
+*Why u no use MongoDB? (Like in icanhazblog.)* MongoDB is (was?) cooler that MySQL. But let's face it, it's an overkill for a simple blog application. Among other things it takes way too much disc space for a such a small database. The MongoDB code is still be available (but not maintained) in `icanhazblog` repository.
+
+## Installation
 
 * Install required gems:
 `bundle install`
 
-* Make sure your MongoDB database is running and set up Mongoid
-`config/mongoid.yml.example -> mongoid.yml`
+* Set up database:
+`config/database.yml.example -> database.yml`
 
 * Check if everything it working:
 `rake test`
@@ -35,22 +37,6 @@ Icanhazblog is a blog application running on MongoDB and Rails 3.
 
 * Run +rails server+ and go to +http://localhost:3000/+
 
-## TODO ##
+## Author
 
-* use (optionally) Markdown notation to write blog posts instead of HTML
-
-* make blog easier configurable - move blog title and similar "constants" to
-  configuration or localizations
-
-### Switch from MongoDB to MySQL ###
-
-Yeah, MongoDB is way cooler that MySQL, it's hipster cool. But let's face it,
-it's overkill for a simple blog application. My main reason for moving to MySQL
-(I'm also considering other SQL databases) is that MongoDB takes way too much
-space for a such a small database.
-
-The MongoDB code will still be available under +mongodb+ tag.
-
-## Author ##
-
-2010-2011 Lukas Stejskal
+2010-2012 Lukas Stejskal
