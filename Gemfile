@@ -2,9 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '~> 3.1.0'
 
-# TODO try "rainbows" web server
-# gem 'rainbows'
-
 # mongodb
 gem 'mongo', '~> 1.3'
 gem 'bson_ext', '~> 1.3'
@@ -41,14 +38,13 @@ end
   
 gem 'jquery-rails'  
 
-# debugging is allowed by default
-# in development environment
-group :development do
-  gem 'ruby-debug19' 
-end
+# debugging is allowed by default in development environment
+# temporarily omitted, can't install linecache19
+#group :development do
+#  gem 'ruby-debug19' 
+#end
 
-# some test utilities can be used even in rails console
-# during development
+# some test utilities are used in rails console  during development
 group :development, :test do
   gem 'minitest'
   gem 'shoulda'
