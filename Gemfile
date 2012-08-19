@@ -2,10 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '~> 3.1.0'
 
-# mongodb
-gem 'mongo', '~> 1.3'
-gem 'bson_ext', '~> 1.3'
-gem 'mongoid', '~> 2.1'
+gem 'mysql2', '~> 0.3.11'
 
 # password encryption
 gem 'bcrypt-ruby', :require => 'bcrypt' 
