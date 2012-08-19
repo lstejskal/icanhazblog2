@@ -5,32 +5,28 @@ gem 'rails', '~> 3.2.8'
 gem 'mysql2', '~> 0.3.11'
 
 # password encryption
-gem 'bcrypt-ruby', :require => 'bcrypt' 
+gem 'bcrypt-ruby', '~> 3.0.1', :require => 'bcrypt' 
 
-# pagination for mongoid
-# PS: 3.0 doesn't work with mongodb yet
-gem 'will_paginate', '~> 2.3'
+gem 'will_paginate', '~> 3.0.3'
 
-# template handler
-gem 'haml', '~> 3.1'
+gem 'haml', '~> 3.1.7'
 
-# css extension
-gem 'sass', '~> 3.1'
+gem 'sass', '~> 3.2.1'
 
 # syntax highlighting
-gem 'coderay', '~> 0.9'
+gem 'coderay', '~> 0.9.8'
 
 # captcha in comment forms
-gem 'recaptcha', '~> 0.3', :require => 'recaptcha/rails'
+gem 'recaptcha', '~> 0.3.4', :require => 'recaptcha/rails'
 
 # exception reporting
-gem 'exception_notification', '~> 2.4', :require => 'exception_notifier'
+gem 'exception_notification', '~> 2.6.1', :require => 'exception_notifier'
 
 # Gems used only for assets and not required in production by default
 group :assets do  
-  gem 'sass-rails', '~> 3.2.5'  
-  gem 'coffee-rails', '~> 3.2.2'  
-  gem 'uglifier', '~> 1.2.7' 
+  gem 'sass-rails', '~> 3.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier', '~> 1.2.7'
 end  
   
 gem 'jquery-rails', '~> 2.1.1'
